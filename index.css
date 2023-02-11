@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,119 +46,114 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 /*Below this line my CSS code*/
-html, body {
-    font-family: 'Roboto Mono', monospace;
+/*nav > .first-item, .second-item, .third-item; .header-text > .image, .text;  .main-text;  .secondary-text > .campfire, .camp; .bg-image; span.bold*/
+
+* {
+    box-sizing: border-box;
+    /*border: 1px solid grey;*/
+    max-width: 100%;
 }
 
+html {
+    font-size: 62.5%;
+}
 
-
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Robo Mono', monospace;
+}
 
 h1 {
     font-family: 'Chelsea Market', cursive;
-    font-size: 3.5em;
-    margin-bottom: 7%;
+    font-size: 5rem;
 }
 
-div.text > p {
-    margin-bottom: 7%;
+section {
+    padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
-nav > .first-item {
-    background-color: #FF764E;
-}
-
-nav > .second-item {
-    background-color: #5ED3EB;
-}
-
-nav > .third-item {
-    background-color: #FFCD69;
-}
-
+/*header section styles*/
+nav {
+    padding: 2% 0;
+} 
 nav a {
-    border-radius: 12px;
+    display: inline-block;
+    padding:1% 0;
+    width:10%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
     text-decoration: none;
-    color:white;
-    padding:15px;
-    margin-right: 8%;
 }
-header nav {
-    margin-top:3%;
-    text-align: center;
-    margin-bottom:6%;
+.first-item {
+    background-color: #FF764E;
+    margin-left: 10%;
 }
-footer nav {
-    text-align: center;
-    margin-bottom: 3%;
+.second-item {
+    background-color: #5ED3EB;
+    margin:0 24%;
+}
+.third-item {
+    background-color: #FFCD69;
+    margin-right: 10%;
 }
 
+/* header-text */
+.header-text {
+    position:relative;
+}
 
-section.main-text {
+.text, .image {
+    display: inline-block;
+}
+.image {
+    width: 30%;
+}
+.image > img {
+    border-radius: 50%;
+}
+.text {
+    width:55%;
+    margin-left: 5%;
+    text-align: center;
+    line-height: 3;
+    position: absolute;
+    top: 150px;
+}
+
+/*main-text*/
+.main-text {
     background-color: #DDB9A3;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 1% 2%;
+    color: #fff;
+    padding: 2%;
 }
 
-section.main-text > p {
-    margin-bottom: 2%;
-    text-align: center;
-    color:white;
-    
+/*secondary-text*/
+.secondary-text > div {
+    width:30%;
+    margin:5% auto;
 }
-
-section.secondary-text {
-    text-align: center;
-}
-
-section.secondary-text > p {
-    padding-left: 37%;
-    padding-right: 37%;
-    padding-bottom: 3%;
-}
-
-footer {
-    background-color: #F9E7DC;
-}
-span.boldText {
+.bold {
     font-weight: bold;
 }
 
-header > div > div > img {
-    border-radius: 100%;
-    /*width: 50%;*/
+/*background-image section*/
+.bg-image {
+    background-image: url('assets/footer_img.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width:100%;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3%;
+/*footer*/
+footer {
+    background-color: #F9E7DC;
 }
-div > .image > img {
-    max-width: 40%;
-    max-height: auto;
-  }
-
-  div > .image {
-    text-align: center;
-    margin-right:-15%;
-  }
-
-  div > .text {
-    margin-right: 22%;
-  }
-
-  footer > .footerimage > img {
-    width:50%;
-    height: 25%;
-
-  }
-
-  footer > .footerimage {
-    text-align: center;
-    padding-bottom: 3%;
-    margin-top: 10%;
-    width: 100%;
-  }
-
